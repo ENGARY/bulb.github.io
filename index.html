@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <img src="../IMG/bulb off.png" alt="BULB OF" id="img">
+    <img src="bulb off.png" alt="BULB OF" id="img">
     <button class="button">TURN ON</button>
     <script>
          let btn = document.getElementsByClassName('button');
@@ -27,12 +27,12 @@
          btn[0].addEventListener('click', func);
          function func(){
               if (btn[0].textContent.includes('ON')){
-                    img.src= "../IMG/bulb on.png";
+                    img.src= "bulb on.png";
                     btn[0].textContent = 'TURN OFF';
 
               }
               else{
-                    img.src = "../IMG/bulb off.png";
+                    img.src = "bulb off.png";
                     btn[0].textContent= 'TURN ON';
               }
 
