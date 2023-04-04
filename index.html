@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+    <style>
+        #img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body{
+            background-color: black;
+        }
+        .button{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="../IMG/bulb off.png" alt="BULB OF" id="img">
+    <button class="button">TURN ON</button>
+    <script>
+         let btn = document.getElementsByClassName('button');
+         let img = document.getElementById('img');
+         btn[0].addEventListener('click', func);
+         function func(){
+              if (btn[0].textContent.includes('ON')){
+                    img.src= "../IMG/bulb on.png";
+                    btn[0].textContent = 'TURN OFF';
+
+              }
+              else{
+                    img.src = "../IMG/bulb off.png";
+                    btn[0].textContent= 'TURN ON';
+              }
+
+         }
+
+    </script>    
+</body>
+</html>
